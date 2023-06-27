@@ -7,23 +7,82 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B76BC5C6FD53E9D92E87AE1 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = EF43524E7592122695D0866B /* awsconfiguration.json */; };
+		37A45A99DCAA8DFD6060361C /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86F548EE55FBFF5964A1272 /* Todo.swift */; };
+		68E289B6CF8731D990D928D9 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BA343B8AA2D0047FC5D6CD /* AmplifyModels.swift */; };
 		980D9EB12A4AED4B0089022B /* HelloWorldAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D9EB02A4AED4B0089022B /* HelloWorldAppApp.swift */; };
 		980D9EB32A4AED4B0089022B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D9EB22A4AED4B0089022B /* ContentView.swift */; };
 		980D9EB52A4AED4C0089022B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980D9EB42A4AED4C0089022B /* Assets.xcassets */; };
 		980D9EB92A4AED4C0089022B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980D9EB82A4AED4C0089022B /* Preview Assets.xcassets */; };
+		980D9EC62A4AF2EB0089022B /* newWatchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D9EC52A4AF2EB0089022B /* newWatchAppApp.swift */; };
+		980D9EC82A4AF2EB0089022B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980D9EC72A4AF2EB0089022B /* ContentView.swift */; };
+		980D9ECA2A4AF2EC0089022B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980D9EC92A4AF2EC0089022B /* Assets.xcassets */; };
+		980D9ECD2A4AF2EC0089022B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980D9ECC2A4AF2EC0089022B /* Preview Assets.xcassets */; };
+		980D9ED02A4AF2EC0089022B /* newWatchApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 980D9EC32A4AF2EB0089022B /* newWatchApp Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		980D9ED72A4AF8C20089022B /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 980D9ED62A4AF8C20089022B /* AWSAPIPlugin */; };
+		980D9ED92A4AF8C20089022B /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 980D9ED82A4AF8C20089022B /* AWSCognitoAuthPlugin */; };
+		980D9EDB2A4AF8C20089022B /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 980D9EDA2A4AF8C20089022B /* AWSDataStorePlugin */; };
+		980D9EDD2A4AF8C20089022B /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 980D9EDC2A4AF8C20089022B /* Amplify */; };
+		B384941B4C125DDC0623FE88 /* Todo+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87A961FF52B5867CDA3E8A /* Todo+Schema.swift */; };
+		F231837C6AF791F8754A3ED9 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = ECC501EB197C8F21E7F9DCD9 /* amplifyconfiguration.json */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		980D9ECE2A4AF2EC0089022B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 980D9EA52A4AED4B0089022B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 980D9EC22A4AF2EB0089022B;
+			remoteInfo = "newWatchApp Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		980D9ED42A4AF2EC0089022B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				980D9ED02A4AF2EC0089022B /* newWatchApp Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		12BA343B8AA2D0047FC5D6CD /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		8B87A961FF52B5867CDA3E8A /* Todo+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Todo+Schema.swift"; path = "amplify/generated/models/Todo+Schema.swift"; sourceTree = "<group>"; };
 		980D9EAD2A4AED4B0089022B /* HelloWorldApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		980D9EB02A4AED4B0089022B /* HelloWorldAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldAppApp.swift; sourceTree = "<group>"; };
 		980D9EB22A4AED4B0089022B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		980D9EB42A4AED4C0089022B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		980D9EB62A4AED4C0089022B /* HelloWorldApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelloWorldApp.entitlements; sourceTree = "<group>"; };
 		980D9EB82A4AED4C0089022B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		980D9EC32A4AF2EB0089022B /* newWatchApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "newWatchApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		980D9EC52A4AF2EB0089022B /* newWatchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newWatchAppApp.swift; sourceTree = "<group>"; };
+		980D9EC72A4AF2EB0089022B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		980D9EC92A4AF2EC0089022B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		980D9ECC2A4AF2EC0089022B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A86F548EE55FBFF5964A1272 /* Todo.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Todo.swift; path = amplify/generated/models/Todo.swift; sourceTree = "<group>"; };
+		ECC501EB197C8F21E7F9DCD9 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		EF43524E7592122695D0866B /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		980D9EAA2A4AED4B0089022B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				980D9EDB2A4AF8C20089022B /* AWSDataStorePlugin in Frameworks */,
+				980D9EDD2A4AF8C20089022B /* Amplify in Frameworks */,
+				980D9ED72A4AF8C20089022B /* AWSAPIPlugin in Frameworks */,
+				980D9ED92A4AF8C20089022B /* AWSCognitoAuthPlugin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		980D9EC02A4AF2EB0089022B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,11 +92,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88E5D19A954BF13EF01EDDD5 /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				12BA343B8AA2D0047FC5D6CD /* AmplifyModels.swift */,
+				8B87A961FF52B5867CDA3E8A /* Todo+Schema.swift */,
+				A86F548EE55FBFF5964A1272 /* Todo.swift */,
+			);
+			name = AmplifyModels;
+			sourceTree = "<group>";
+		};
 		980D9EA42A4AED4B0089022B = {
 			isa = PBXGroup;
 			children = (
 				980D9EAF2A4AED4B0089022B /* HelloWorldApp */,
+				980D9EC42A4AF2EB0089022B /* newWatchApp Watch App */,
 				980D9EAE2A4AED4B0089022B /* Products */,
+				CC7D6412BCCDC73CBBFEAC07 /* AmplifyConfig */,
+				88E5D19A954BF13EF01EDDD5 /* AmplifyModels */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				980D9EAD2A4AED4B0089022B /* HelloWorldApp.app */,
+				980D9EC32A4AF2EB0089022B /* newWatchApp Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +142,34 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		980D9EC42A4AF2EB0089022B /* newWatchApp Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				980D9EC52A4AF2EB0089022B /* newWatchAppApp.swift */,
+				980D9EC72A4AF2EB0089022B /* ContentView.swift */,
+				980D9EC92A4AF2EC0089022B /* Assets.xcassets */,
+				980D9ECB2A4AF2EC0089022B /* Preview Content */,
+			);
+			path = "newWatchApp Watch App";
+			sourceTree = "<group>";
+		};
+		980D9ECB2A4AF2EC0089022B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				980D9ECC2A4AF2EC0089022B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC7D6412BCCDC73CBBFEAC07 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				EF43524E7592122695D0866B /* awsconfiguration.json */,
+				ECC501EB197C8F21E7F9DCD9 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,14 +180,39 @@
 				980D9EA92A4AED4B0089022B /* Sources */,
 				980D9EAA2A4AED4B0089022B /* Frameworks */,
 				980D9EAB2A4AED4B0089022B /* Resources */,
+				980D9ED42A4AF2EC0089022B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				980D9ECF2A4AF2EC0089022B /* PBXTargetDependency */,
+			);
+			name = HelloWorldApp;
+			packageProductDependencies = (
+				980D9ED62A4AF8C20089022B /* AWSAPIPlugin */,
+				980D9ED82A4AF8C20089022B /* AWSCognitoAuthPlugin */,
+				980D9EDA2A4AF8C20089022B /* AWSDataStorePlugin */,
+				980D9EDC2A4AF8C20089022B /* Amplify */,
+			);
+			productName = HelloWorldApp;
+			productReference = 980D9EAD2A4AED4B0089022B /* HelloWorldApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		980D9EC22A4AF2EB0089022B /* newWatchApp Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 980D9ED12A4AF2EC0089022B /* Build configuration list for PBXNativeTarget "newWatchApp Watch App" */;
+			buildPhases = (
+				980D9EBF2A4AF2EB0089022B /* Sources */,
+				980D9EC02A4AF2EB0089022B /* Frameworks */,
+				980D9EC12A4AF2EB0089022B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HelloWorldApp;
-			productName = HelloWorldApp;
-			productReference = 980D9EAD2A4AED4B0089022B /* HelloWorldApp.app */;
+			name = "newWatchApp Watch App";
+			productName = "newWatchApp Watch App";
+			productReference = 980D9EC32A4AF2EB0089022B /* newWatchApp Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,6 +228,9 @@
 					980D9EAC2A4AED4B0089022B = {
 						CreatedOnToolsVersion = 14.3;
 					};
+					980D9EC22A4AF2EB0089022B = {
+						CreatedOnToolsVersion = 14.3;
+					};
 				};
 			};
 			buildConfigurationList = 980D9EA82A4AED4B0089022B /* Build configuration list for PBXProject "HelloWorldApp" */;
@@ -113,11 +242,15 @@
 				Base,
 			);
 			mainGroup = 980D9EA42A4AED4B0089022B;
+			packageReferences = (
+				980D9ED52A4AF8C20089022B /* XCRemoteSwiftPackageReference "amplify-swift" */,
+			);
 			productRefGroup = 980D9EAE2A4AED4B0089022B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				980D9EAC2A4AED4B0089022B /* HelloWorldApp */,
+				980D9EC22A4AF2EB0089022B /* newWatchApp Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +262,17 @@
 			files = (
 				980D9EB92A4AED4C0089022B /* Preview Assets.xcassets in Resources */,
 				980D9EB52A4AED4C0089022B /* Assets.xcassets in Resources */,
+				2B76BC5C6FD53E9D92E87AE1 /* awsconfiguration.json in Resources */,
+				F231837C6AF791F8754A3ED9 /* amplifyconfiguration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		980D9EC12A4AF2EB0089022B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				980D9ECD2A4AF2EC0089022B /* Preview Assets.xcassets in Resources */,
+				980D9ECA2A4AF2EC0089022B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +285,31 @@
 			files = (
 				980D9EB32A4AED4B0089022B /* ContentView.swift in Sources */,
 				980D9EB12A4AED4B0089022B /* HelloWorldAppApp.swift in Sources */,
+				68E289B6CF8731D990D928D9 /* AmplifyModels.swift in Sources */,
+				B384941B4C125DDC0623FE88 /* Todo+Schema.swift in Sources */,
+				37A45A99DCAA8DFD6060361C /* Todo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		980D9EBF2A4AF2EB0089022B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				980D9EC82A4AF2EB0089022B /* ContentView.swift in Sources */,
+				980D9EC62A4AF2EB0089022B /* newWatchAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		980D9ECF2A4AF2EC0089022B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 980D9EC22A4AF2EB0089022B /* newWatchApp Watch App */;
+			targetProxy = 980D9ECE2A4AF2EC0089022B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		980D9EBA2A4AED4C0089022B /* Debug */ = {
@@ -259,12 +424,15 @@
 		980D9EBD2A4AED4C0089022B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HelloWorldApp/HelloWorldApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HelloWorldApp/Preview Content\"";
+				DEVELOPMENT_TEAM = H52T68TG7R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -285,22 +453,26 @@
 				PRODUCT_BUNDLE_IDENTIFIER = demo.HelloWorldApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3";
 			};
 			name = Debug;
 		};
 		980D9EBE2A4AED4C0089022B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HelloWorldApp/HelloWorldApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HelloWorldApp/Preview Content\"";
+				DEVELOPMENT_TEAM = H52T68TG7R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -321,10 +493,73 @@
 				PRODUCT_BUNDLE_IDENTIFIER = demo.HelloWorldApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+			};
+			name = Release;
+		};
+		980D9ED22A4AF2EC0089022B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"newWatchApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = H52T68TG7R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = newWatchApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = demo.HelloWorldApp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = demo.HelloWorldApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		980D9ED32A4AF2EC0089022B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"newWatchApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = H52T68TG7R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = newWatchApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = demo.HelloWorldApp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = demo.HelloWorldApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Release;
 		};
@@ -349,7 +584,50 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		980D9ED12A4AF2EC0089022B /* Build configuration list for PBXNativeTarget "newWatchApp Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				980D9ED22A4AF2EC0089022B /* Debug */,
+				980D9ED32A4AF2EC0089022B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		980D9ED52A4AF8C20089022B /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		980D9ED62A4AF8C20089022B /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 980D9ED52A4AF8C20089022B /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		980D9ED82A4AF8C20089022B /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 980D9ED52A4AF8C20089022B /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		980D9EDA2A4AF8C20089022B /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 980D9ED52A4AF8C20089022B /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSDataStorePlugin;
+		};
+		980D9EDC2A4AF8C20089022B /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 980D9ED52A4AF8C20089022B /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 980D9EA52A4AED4B0089022B /* Project object */;
 }
