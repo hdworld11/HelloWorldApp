@@ -14,6 +14,8 @@ struct ContentView: View {
     @State private var itemDescription: String = ""
     @State private var itemList: [Todo] = [Todo]()
     
+    @EnvironmentObject private var viewModel: ViewModel
+    
     var body: some View {
         VStack {
             
@@ -49,7 +51,7 @@ struct ContentView: View {
             #endif
         }
         .padding()
-        .onAppear(perform: {Task {await subscribeTodos()}})
+        .onAppear(perform: {Task {await viewModel.subscribeTodos()}})
     }
     
     
@@ -89,41 +91,7 @@ struct ContentView: View {
         }
     }
     
-    func subscribeTodos() async {
-      do {
-          
-          print("I am here")
-          
-          let mutationEvents = Amplify.DataStore.observe(Todo.self)
-          for try await mutationEvent in mutationEvents {
-              print("Subscription got this value: \(mutationEvent)")
-              do {
-                  let todo = try mutationEvent.decodeModel(as: Todo.self)
-                  
-                  switch mutationEvent.mutationType {
-                  case "create":
-                      print("Created: \(todo)")
-                  case "update":
-                      print("Updated: \(todo)")
-                  case "delete":
-                      print("Deleted: \(todo)")
-                  default:
-                      break
-                  }
-                  
-                  print(todo)
-                  
-              } catch {
-                  print("Model could not be decoded: \(error)")
-              }
-          }
-          
-          await refreshItems()
-          
-      } catch {
-          print("Unable to observe mutation events")
-      }
-    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
